@@ -7,12 +7,75 @@ Fontes:
 https://blog.grancursosonline.com.br/colecoes-em-python-listas/
 
 São quatro as coleções em Python:
-
 1.  Lista;
 2.  Tupla;
 3.  Set;
 4.  Dicionário.
 
-Na tabela abaixo a principal característica destas coleções:
+Sobre as listas e suas caracteristicas:
+1.  Ordenadas: Sim
+2.  Mutáveis: Sim
+3.  Indexadas: Sim
+4.  Permite membros repetidos: Sim
 
-[[https://github.com/DavidCardoso1984/Python/blob/master/img/EstruturasPython.JPG|alt=octocat]]
+* Repetindo: listas são ordenadas, mutáveis, indexadas e permitem membros repetidos.
+
+As listas são escritas com colchetes [], abaixo um exemplo de como são declaradas listas em Python:
+linguagens = ["Python", "Java", "PHP", "C"]
+
+O construtor da lsitas é o list[], podendo ser declarada da sequinte maneira:
+linguagens1 = list(["Python", "Java", "PHP", "C"])
+
+Ou ainda pode ser criada somente com:
+linguagens1 = ["Python", "Java", "PHP", "C"]
+
+Uma lista pode ser criada a partir de outra, ainda usando o construtor list(), passando a lista original como
+parâmetro:
+
+# Lista original.
+linguagens1 = ["Python", "Java", "PHP", "C"]
+
+# Lista criada a partir de outra.
+linguagens2 = list(linguagens1)
+
+Para acessar um elemento da lista, utiliza-se a indexação numérica (lista[n]), informando qual a posição da lista
+(n):
+linguagens = ["Python", "Java", "PHP", "C"]
+
+# Imprimindo o terceiro elemento "PHP".
+print(linguagens[2]) # Será impresso PHP
+
+Observação: em Python, o primeiro elemento de uma lista começa na posição 0.
+
+Podemos também acessar um intervalo de elementos (lista[n:m]), informando o índice inicial (n) e o índice final
+de uma lista (m – não incluído):
+linguagens = ["Python", "Java", "PHP", "C"]
+
+# Imprimindo os elementos da posição 0 até a posição 1.
+print(linguagens[0:2]) # Será impresso ['Python', 'Java']
+
+Pode-se alterar o valor de um elemento, indicando seu índice e seu novo valor:
+linguagens = ["Python", "Java", "PHP", "C"]
+
+# Alterando o elemento de índice 2 (terceiro elemento): de "PHP" para "C#".
+linguagens[2] = "C#"
+print(linguagens) # Será impresso ['Python', 'Java', 'C#', 'C']
+
+Métodos de inserção:
+
+insert() para inserir um unico item a lista em posição especifíca:
+insert(i, x)
+linguagens.insert(0, "Ruby")
+linguagens = ["Ruby", "Python", "Java", "PHP", "C"]
+
+append() para inserir um item no fim da fila:
+append(x)
+linguagens.append(0, "JavaScript")
+linguagens = ["Ruby", "Python", "Java", "PHP", "C", "JavaScript"]
+
+extend() para iserir um range de itend no fim da fila:
+extend([x:y])
+linguagens.extend("Fortran", "SQL")
+linguagens = ["Ruby", "Python", "Java", "PHP", "C", "JavaScript", "Fortran", "SQL"]
+
+Em edição...
