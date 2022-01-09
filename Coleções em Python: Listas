@@ -79,4 +79,12 @@ extend([x:y])
 linguagens.extend("Fortran", "SQL")
 linguagens = ["Ruby", "Python", "Java", "PHP", "C", "JavaScript", "Fortran", "SQL"]
 
-Em edição...
+Biblioteca Ramdom aplicadas a lista:
+
+random.choice([lista]).
+Quando quisermos selecionar um elemento aleatório de uma lista um opção seria usar a função choice().
+Ela seleciona o conteúdo de um dos incices contidos dento de uma lista.
+linguagens = ["Ruby", "Python", "Java", "PHP", "C", "JavaScript"]
+sorteado = random.choice(linguagens)
+print(sorteado)
+Ruby
