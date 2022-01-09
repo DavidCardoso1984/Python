@@ -88,3 +88,12 @@ linguagens = ["Ruby", "Python", "Java", "PHP", "C", "JavaScript"]
 sorteado = random.choice(linguagens)
 print(sorteado)
 Ruby
+
+É possível ta,bé,m criar listas de listas como o exemplo abaixo:
+
+fruit = ["Strawberries", "Nectarines", "Apples", "Grapes", 
+            "Cherries", "Peaches", "Pears"]
+vegetables = ["Spinach", "Kale", "Collard and mustard greens", 
+                "Bell and hot Peppers", "Celery", "Tomatoes"]
+dirty_dozen = [fruit, vegetables]
+print(dirty_dozen)
